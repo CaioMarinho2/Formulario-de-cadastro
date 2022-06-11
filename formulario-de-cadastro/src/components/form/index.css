@@ -1,111 +1,105 @@
-.error{
-    margin: 0;
+.error {
+  margin: 0;
   color: red;
   font-size: 15px;
   margin-bottom: 15px;
-  }
-  
-  form {
-    width: 500px;
-    height: 600px;
-   display: flex;
+}
+
+form {
+  width: 500px;
+  height: 600px;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #171a1d;
   border-radius: 10px;
+}
+
+.formAreas {
+  position: relative;
+  width: 330px;
+  height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.formLabel {
+  font-size: 15px;
+  width: 90px;
+
+  cursor: text;
+  transition: 0.5s;
+}
+#formLabelSenhaConfirm {
+  width: 185px;
+}
+#formLabelSenha {
+  width: 100px;
+}
+.formInput {
+  position: absolute;
+  height: 40px;
+  width: 300px;
+  background-color: transparent;
+  border: 2px solid #292928;
+  border-radius: 4px;
+  color: white;
+}
+
+.formInput:focus {
+  outline: none;
+  border: 2px solid #2a346e;
+}
+
+.formInput:focus ~ .formLabel,
+.formInput:not(:placeholder-shown).formInput:not(:focus) ~ .formLabel {
+  position: absolute;
+  width: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  font-size: 12px;
+  background-color: #171a1d;
+}
+
+.formInput:focus ~ #formLabelSenha,
+.formInput:not(:placeholder-shown).formInput:not(:focus) ~ #formLabelSenha {
+  width: 60px;
+}
+.formInput:focus ~ #formLabelSenhaConfirm,
+.formInput:not(:placeholder-shown).formInput:not(:focus)
+  ~ #formLabelSenhaConfirm {
+  width: 130px;
+}
+
+.cadastrar {
+  width: 240px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #324191;
+  border: none;
+  color: white;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 510px) {
+  form {
+    height: 70vh;
+    width: 40vh;
   }
-  
+
   .formAreas {
-    position: relative;
-    width: 330px;
-     height: 45px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .formLabel {
-    font-size: 15px;
-    width: 90px;
-    
-    cursor: text;
-    transition: 0.5s;
-  }
-  #formLabelSenhaConfirm{
-    width: 185px;
-  }
-  #formLabelSenha {
-    width: 100px;
-  
+    width: 35vh;
   }
   .formInput {
-    position: absolute;
+    width: 33vh;
+  }
+
+  .cadastrar {
+    width: 160px;
     height: 40px;
-    width: 300px;
-    background-color: transparent;
-    border: 2px solid #292928;
-    border-radius: 4px;
-    color: white;
-  
+    margin-right: 0px;
   }
-  
-  .formInput:focus {
-    outline: none;
-    border: 2px solid #2a346e;
-  
-  }
-  
-  .formInput:focus ~ .formLabel,
-  .formInput:not(:placeholder-shown).formInput:not(:focus) ~ .formLabel {
-    position: absolute;
-    width: 50px;
-    margin-bottom: 50px;
-    margin-left: 20px;   
-    font-size: 12px;
-    background-color:  #171a1d;
-    
-  }
-  
-  .formInput:focus ~ #formLabelSenha,
-  .formInput:not(:placeholder-shown).formInput:not(:focus) ~ #formLabelSenha {
-  
-    width: 60px;
-    
-  } 
-  .formInput:focus ~ #formLabelSenhaConfirm,
-  .formInput:not(:placeholder-shown).formInput:not(:focus) ~ #formLabelSenhaConfirm {
-    width: 130px;
-  
-  } 
-  
-  
-  .cadastrar{
-    width: 240px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #324191;
-    border: none;
-    color: white;
-    margin-right: 15px;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 510px) {
-    form {
-      height: 70vh;
-      width: 40vh;
-    }
-  
-    .formAreas {
-      width: 35vh;
-    }
-    .formInput {
-      width: 33vh;}
-  
-      .cadastrar{
-        width: 160px;
-        height: 40px;
-        margin-right: 0px;
-      }
-  }
+}

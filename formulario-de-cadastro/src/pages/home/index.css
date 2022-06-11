@@ -1,40 +1,38 @@
-.cachorroFeliz{
-    border-radius: 5px;
-    height: 500px;
+.cachorroFeliz {
+  border-radius: 5px;
+  height: 500px;
 }
-.voltar{
-    background-color: transparent;
-    color: white;
-    border-color: white;
-    margin-left: 40px;
-    border-radius: 5px;
-    width: 100px;
-    height: 45px;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.voltar {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  margin-left: 40px;
+  border-radius: 5px;
+  width: 100px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-h1{
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1 {
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 @media (max-width: 649px) {
-
-    .cachorroFeliz{
-         width: 40vh;
-        height: 40vh;
-    }
-    .home{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .voltar{
-        margin-left: 0px;
-        margin-top: 50px;
-    }
+  .cachorroFeliz {
+    width: 40vh;
+    height: 40vh;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .voltar {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
 }
-
