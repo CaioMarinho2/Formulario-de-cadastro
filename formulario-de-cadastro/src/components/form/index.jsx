@@ -18,7 +18,7 @@ function Form() {
       .matches(
         /^(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/,
         "A senha deve conter ao menos um símbolo, letras, números  e ter no mínimo 8 caracteres!"
-      ) /* .min(8,"Mínimo de 8 caracteres!") */,
+      ),
     passwordConfirm: yup
       .string()
       .oneOf([yup.ref("password")], "As senhas não são iguais!")
